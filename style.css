@@ -83,27 +83,82 @@ header p span{
     color: rgb(71, 70, 70);
 }
 .product{
-    padding: 1px 120px;
+    padding: 30px 150px;
 }
 
 .bar{
     counter-reset: step;
     counter-increment: step 0;
+    position: relative;
+    list-style-type: none;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .bar li{
-    list-style-type: none;
-    position: relative;
+    padding-bottom: 50px;
 }
-
+.bar li div{
+    margin-left: 60px;
+    font-family: 'Catamaran', sans-serif;
+}
+.bar li div h3{
+    font-size: 20px;
+    /* margin-bottom: 0px; */
+}
+.bar li div h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(92, 92, 92);
+    margin-bottom: 20px;
+}
+.bar li div h6{
+    font-size: 12px;
+    color: rgb(92, 92, 92);
+}
+.bar li div button{
+    padding: 8px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    color: white;
+    background: rgb(204, 202, 202);
+}
+.bar li div input{
+    padding: 12px 50px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(92, 92, 92);
+    outline: none;
+}
 .bar li::before{
+    position: absolute;
     content: counter(step);
     counter-increment: step;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     text-align: center;
-    border: 2px solid black;
-    
+    background: #fff;
+    border: 1px solid rgb(92, 92, 92);
+    left: 0px;
+    border-radius: 50%;
 }
+
+.bar li::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #aaa69d;
+    height: 70%;
+    z-index: -1;
+    top: 10px;
+    left: 18px;
+    /* left: 0;
+    right: 0; */
+}
+
 
 /* color: rgb(41, 108, 235); */
 /* background: rgb(245, 212, 67); */
