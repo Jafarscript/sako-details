@@ -84,6 +84,19 @@ header p span{
 }
 .product{
     padding: 30px 150px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+}
+.product::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 62%;
+    background-color: hotpink;
+    background: #aaa69d;
 }
 
 .bar{
@@ -149,7 +162,7 @@ header p span{
 .bar li::after{
     content: "";
     position: absolute;
-    width: 1px;
+    width: 2px;
     background: #aaa69d;
     height: 70%;
     z-index: -1;
@@ -159,7 +172,130 @@ header p span{
     right: 0; */
 }
 
+.add{
+    padding: 10px 20px 20px 20px;
+}
+.add h3{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.add h3 span{
+    padding: 0.5px 9px;
+    background-color: rgb(41, 108, 235);
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.goods{
+    padding-bottom: 20px;
+    border-bottom: 0.2px solid rgb(141, 141, 141);
+}
+.bag{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.bag h5{
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(92, 92, 92);
+    font-size: 14px;
+    /* margin-top: 10px; */
+}
+.bags{
+    font-family: 'Catamaran', sans-serif;
+    margin: 20px auto;
+}
+.bags .maths{
+    border: 1px solid rgb(41, 108, 235);
+    text-align: center;
+    padding: 5px 32px;
+    position: relative;
+    border-radius: 3px;
+    height: auto;
+    font-size: 17px;
+    float: right;
+    line-height: 10px;
+}
+.bags h4{
+    font-size: 14px;
+    font-weight: 600;
+    /* margin-bottom: 0px; */
+    line-height: 15px;
+}
+.bags h5{
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+.bags .price{
+    font-size: 15px;
+    line-height: 5px;
+}
+.bags s{
+    font-size: 13px;
+}
+.subtotal{
+    font-family: 'Catamaran', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.2px dashed rgb(141, 141, 141);
+    color: rgb(92, 92, 92);
+}
+.subtotal span{
+    float: right;
+}
+.subtotal .green{
+    color: rgb(14, 165, 14);
+}
+.total{
+    font-family: 'Catamaran', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.2px dashed rgb(141, 141, 141);
+}
+.total h4{
+    font-size: 14px;
+    font-weight: 900;
+}
+.total span{
+    float: right;
+    font-weight: bold;
+}
+.total h5{
+    font-style: italic;
+    color: rgb(92, 92, 92);
+    font-weight: 200;
+}
+.save{
+    margin-top: 10px;
+    color: rgb(14, 165, 14);
+    font-family: 'Catamaran', sans-serif;
 
+}
+#minus{
+    position: absolute;
+    color: rgb(41, 108, 235);
+    font-size: 12px;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+    background-color: rgb(201, 217, 245);
+    padding: 5px 5px;
+}
+
+#plus{
+    position: absolute;
+    color: rgb(41, 108, 235);
+    font-size: 12px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    background-color: rgb(201, 217, 245);
+    padding: 5px 5px;
+}
 /* color: rgb(41, 108, 235); */
 /* background: rgb(245, 212, 67); */
 
